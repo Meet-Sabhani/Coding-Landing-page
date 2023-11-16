@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
+
 <body>
-    <div id="main">
-        <div id="nav">
-            <!-- <img src="https://www.chungiyoo.com/img/faces/smile%2001.svg" alt=""> -->
-            <img src="logo.svg" alt="">
-            <h5>Meet Sabhani</h5>
-        </div>
-        <div id="part1"></div>
-        <div id="part2">
-            <div id="overlay"></div>
-        </div>
-        <div id="part3"></div>
-        <div id="text-div">
-            <h1>Landing</h1>
-            <h1>Page</h1>
-            <h1>Html</h1>
-            <h1>& css</h1>
-        </div>
-        <div id="small-img">
-            <div id=""></div>
-        </div>
-        <div id="virtical-text">
-            <h1>Made by Meet</h1>
-        </div>
-    </div>
+    <header class="main">
+        <nav>
+            <h1>Coding</h1>
+            <i class="ri-menu-3-line menu" onclick="openMenu()"></i>
+            <ul id="slide">
+                <i class="ri-arrow-go-back-line menu" onclick="closeMenu()"></i>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Courses</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="hero">
+            <div class="left">
+                <h1>Learn From the <span>coolest Coding platform</span> in India. </h1>
+                <button>Explore Courses</button>
+            </div>
+            <div class="right">
+                <img src="https://media.istockphoto.com/id/932559358/photo/silhouette-of-virtual-human-on-circuit-pattern-technology-3d-illustration.jpg?s=1024x1024&w=is&k=20&c=lykUWo3ZKa2vjiRXWYEvR_0gfOH3bYkQZX6dDi0FiYw="
+                    alt="">
+            </div>
+        </section>
+    </header>
+    <script>
+        let slide = document.getElementById("slide")
+        const openMenu = () => {
+            slide.style.right = 0
+        }
+        const closeMenu = () => {
+            slide.style.right = '-100%';
+        }
+    </script>
 </body>
+
 </html>
