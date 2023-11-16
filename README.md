@@ -1,3 +1,1 @@
-# Landing-page
-
-https://meet-sabhani.github.io/Landing-page/
+https://meet-sabhani.github.io/Coding-Landing-page/
